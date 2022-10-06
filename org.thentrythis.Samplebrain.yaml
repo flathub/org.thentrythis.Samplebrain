@@ -27,7 +27,7 @@ modules:
     buildsystem: autotools
     config-opts:
       - "--with-alsa"
-      - "--with-jack"
+      - "--without-jack"
       - "--without-oss"
       - "--without-asihpi"
     sources:
@@ -48,8 +48,8 @@ modules:
     sources:
       - type: git
         url: https://gitlab.com/then-try-this/samplebrain.git
-        tag: 0.18.3_release
-        commit: 524cd5894598fca8e6c42f7f869209e39bc2381f
+        tag: 0.18.4_release
+        commit: ac83efce3b53c0ae6ca6723602d168b88b8ecb9e
 
   - name: samplebrain-metainfo
     buildsystem: simple
