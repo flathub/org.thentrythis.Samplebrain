@@ -38,6 +38,16 @@
   </screenshots>
 
   <releases>
+    <release version="0.18.4" date="2022-10-06">
+      <url>https://gitlab.com/then-try-this/samplebrain/-/releases/0.18.4_release</url>
+      <description>
+        <ul>
+          <li>New audio device settings window</li>
+          <li>Updated windows build</li>
+          <li>Better default block size, tool tip tweaks and fixes for dark themes.</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.18.3" date="2022-09-30">
       <url>https://gitlab.com/then-try-this/samplebrain/-/releases/0.18.3_release</url>
       <description>
