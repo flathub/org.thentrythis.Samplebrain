@@ -46,10 +46,9 @@ modules:
     config-opts:
       - "LIBS+=-L/app/lib"
     sources:
-      - type: git
-        url: https://gitlab.com/then-try-this/samplebrain.git
-        tag: 0.18.4_release
-        commit: ac83efce3b53c0ae6ca6723602d168b88b8ecb9e
+      - type: archive
+        url: https://gitlab.com/then-try-this/samplebrain/-/archive/v0.18.5_release/samplebrain-v0.18.5_release.tar.gz
+        sha256: 2e6723aa6a9ad84663a03c41af78826e0a29014a56785129b4fbd3bdba0e2993
 
   - name: samplebrain-metainfo
     buildsystem: simple

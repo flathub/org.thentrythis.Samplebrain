@@ -38,6 +38,18 @@
   </screenshots>
 
   <releases>
+    <release version="0.18.5" date="2022-10-28">
+      <url>https://gitlab.com/then-try-this/samplebrain/-/releases/v0.18.5_release</url>
+      <description>
+        <ul>
+          <li>target sound filename shown (and tells you if you don't have one)</li>
+          <li>more soundfile formats supported (aiff,aifc,au,snd,fasttracker xi,flac)</li>
+          <li>new configurable OSC ports in settings</li>
+          <li>warning boxes if the network connection fails</li>
+          <li>file path memory per-dialog rather than global</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.18.4" date="2022-10-06">
       <url>https://gitlab.com/then-try-this/samplebrain/-/releases/0.18.4_release</url>
       <description>
