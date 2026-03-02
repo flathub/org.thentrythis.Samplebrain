@@ -1,6 +1,6 @@
 id: org.thentrythis.Samplebrain
 runtime: org.kde.Platform
-runtime-version: "5.15-23.08"
+runtime-version: "5.15-25.08"
 sdk: org.kde.Sdk
 
 rename-desktop-file: samplebrain.desktop
@@ -9,30 +9,30 @@ rename-icon: samplebrain
 command: samplebrain
 
 finish-args:
-  - "--share=ipc"
-  - "--socket=wayland"
-  - "--socket=fallback-x11"
-  - "--socket=pulseaudio"
-  - "--device=dri"
-  - "--share=network"
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --socket=pulseaudio
+  - --device=dri
+  - --share=network
 
 cleanup:
-  - "/include"
-  - "/lib/cmake"
-  - "/lib/pkgconfig"
-  - "/share/doc"
+  - /include
+  - /lib/cmake
+  - /lib/pkgconfig
+  - /share/doc
 
 modules:
   - name: portaudio
     buildsystem: autotools
     config-opts:
-      - "--with-alsa"
-      - "--without-jack"
-      - "--without-oss"
-      - "--without-asihpi"
+      - --with-alsa
+      - --without-jack
+      - --without-oss
+      - --without-asihpi
     sources:
       - type: archive
-        url: http://files.portaudio.com/archives/pa_stable_v190700_20210406.tgz
+        url: https://files.portaudio.com/archives/pa_stable_v190700_20210406.tgz
         sha256: 47efbf42c77c19a05d22e627d42873e991ec0c1357219c0d74ce6a2948cb2def
 
   - shared-modules/linux-audio/liblo.json
@@ -41,6 +41,7 @@ modules:
     buildsystem: qmake
     builddir: true
     build-options:
+      cxxflags: -fpermissive
       env:
         PREFIX: /app
     config-opts:
